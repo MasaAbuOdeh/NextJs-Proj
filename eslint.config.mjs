@@ -3,9 +3,15 @@ import nextVitals from "eslint-config-next/core-web-vitals";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
+  {
+    plugins: ["prettier"],           // نضيف Prettier plugin
+    extends: ["plugin:prettier/recommended"], // يخلي ESLint يطبق Prettier
+    rules: {
+      "prettier/prettier": "error",  // أي خطأ Prettier يعتبر خطأ ESLint
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",
@@ -14,3 +20,4 @@ const eslintConfig = defineConfig([
 ]);
 
 export default eslintConfig;
+
