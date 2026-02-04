@@ -12,9 +12,7 @@ const total = chargingData.reduce((sum, item) => sum + item.value, 0)
 export default function ChargingTypeDonutChart() {
   return (
     <div
-      className="w-full h-full rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-950"
-      dir="rtl"
-    >
+      className="w-full h-full rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-950">
       {/* Header */}
       <div className="mb-4">
         <h2 className="text-xl font-bold text-neutral-900 dark:text-neutral-50 text-right">

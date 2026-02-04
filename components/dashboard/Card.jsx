@@ -4,7 +4,7 @@ import {
 
 export default function Card({ icon:Icon, title, subtitle, value, changeType}) {
  return (
-    <div dir="rtl" className="bg-white rounded-xl shadow-sm border border-neutral-200 p-4 transition-shadow hover:shadow-md">
+    <div className="bg-white rounded-xl shadow-sm border border-neutral-200 p-4 transition-shadow hover:shadow-md">
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-50">

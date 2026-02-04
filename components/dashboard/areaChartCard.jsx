@@ -5,14 +5,11 @@ import {
   AreaChart,
   Area,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
 } from "recharts";
 
 export default function AreaChartCard({
-  title,
   data,
   xKey = "date",
   series = [],
@@ -41,13 +38,7 @@ const renderLegend = () => (
 );
 
   return (
-    <div className="w-full rounded-xl bg-white p-6 shadow-sm">
-      {title && (
-        <h2 className="mb-4 text-lg font-bold text-neutral-900">
-          {title}
-        </h2>
-      )}
-
+    <>
       {renderLegend()}
 
       <div className="h-[320px]">
@@ -96,7 +87,7 @@ const renderLegend = () => (
           </AreaChart>
         </ResponsiveContainer>
       </div>
-    </div>
+    </>
   );
 }
 

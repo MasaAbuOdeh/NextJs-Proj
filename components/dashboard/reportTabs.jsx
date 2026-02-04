@@ -23,7 +23,7 @@ export default function ReportTabs({
   onTabChange,
 }) {
   return (
-    <nav dir="rtl" className="w-full" aria-label="تقارير">
+    <nav className="w-full" aria-label="تقارير">
       <div className="overflow-x-auto scrollbar-hide">
         <div 
           className="flex flex-1 gap-4 min-w-max p-2 bg-white rounded-xl border border-gray-100 shadow-sm"
