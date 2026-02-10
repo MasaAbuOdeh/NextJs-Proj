@@ -2,7 +2,8 @@ import {
   ArrowUp,
 } from 'lucide-react';
 
-export default function Card({ icon:Icon, title, subtitle, value, changeType}) {
+
+export default function Card({ icon:Icon, title, subtitle, value}) {
  return (
     <div className="bg-white rounded-xl shadow-sm border border-neutral-200 p-4 transition-shadow hover:shadow-md">
       <div className="flex items-start justify-between">

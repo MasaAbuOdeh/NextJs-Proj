@@ -9,7 +9,7 @@ export default function TabButton({
 }) {
   return (
     <button
-      onClick={() => onTabChange?.(id)}
+      onClick={() =>{ onTabChange?.(id) ;console.log(label)}}
       className={`
         flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg
         font-medium text-xs sm:text-sm whitespace-nowrap
