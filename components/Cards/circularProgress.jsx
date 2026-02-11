@@ -1,4 +1,4 @@
-export default function CircularProgress({ percentage, size = 60, strokeWidth = 6, color = "#98aea0" }){
+export default function CircularProgress({ percentage, size = 60, strokeWidth = 6, color = "#98aea0",strokeLinecap="round" }){
      const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percentage / 100) * circumference;
@@ -23,7 +23,7 @@ export default function CircularProgress({ percentage, size = 60, strokeWidth = 
         strokeWidth={strokeWidth}
         strokeDasharray={circumference}
         strokeDashoffset={offset}
-        strokeLinecap="round"
+        strokeLinecap={strokeLinecap} //butt or round
         fill="transparent"
       />
       {/* النص داخل الدائرة */}
